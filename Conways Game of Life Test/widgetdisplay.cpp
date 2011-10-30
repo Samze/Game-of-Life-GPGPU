@@ -19,7 +19,7 @@ WidgetDisplay::WidgetDisplay(QWidget *parent, Qt::WFlags flags)
 	//Create random CA, lower range is more concentrate
 
 	//GPU Version
-	//CA = new CellularAutomata_GPGPU(CellularDim,initSeed);
+	CA = new CellularAutomata_GPGPU(CellularDim,initSeed);
 
 	//CPU Version
 	//CA = new CellularAutomata_CPU(CellularDim,initSeed);
