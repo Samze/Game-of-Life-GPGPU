@@ -4,6 +4,7 @@ __global__ void kernal(int* g_data, int* DIM) {
 	int x = threadIdx.x + blockIdx.x * blockDim.x;
     int y = threadIdx.y + blockIdx.y * blockDim.y;
 
+	//calculates number of live neighbour cells
 	int neighLiveCells = liveCellsInNeigh(g_data, x * *DIM, y, *DIM);	
 
 	//set new cell state.
