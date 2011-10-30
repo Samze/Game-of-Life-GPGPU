@@ -1,0 +1,44 @@
+﻿Build started 10/30/2011 9:25:40 PM.
+     1>Project "C:\Users\Sam\Conways Game of Life Test\Conways Game of Life Test\Conways Game of Life Test.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Conways Game of Life Test.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         All outputs are up-to-date.
+       AddCudaCompileDeps:
+       Skipping target "AddCudaCompileDeps" because all output files are up-to-date with respect to the input files.
+       AddCudaCompileDeps:
+       Skipping target "AddCudaCompileDeps" because all output files are up-to-date with respect to the input files.
+       AddCudaCompilePropsDeps:
+       Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
+       AddCudaCompilePropsDeps:
+       Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
+       CudaBuild:
+       Skipping target "CudaBuild" because all output files are up-to-date with respect to the input files.
+       CudaBuild:
+       Skipping target "CudaBuild" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /IC:\Qt\4.7.4\include /I.\GeneratedFiles\Debug /IC:\Qt\4.7.4\include\qtmain /IC:\Qt\4.7.4\include\QtCore /IC:\Qt\4.7.4\include\QtGui /IC:\Qt\4.7.4\include\QtOpenGL /I.\ /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include" /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_CORE_LIB /D QT_GUI_LIB /D QT_OPENGL_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt cellularautomata.cpp
+         cellularautomata.cpp
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Sam\Conways Game of Life Test\\Conways Game of Life Test.exe" /NOLOGO /LIBPATH:C:\Qt\4.7.4\lib /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\lib\Win32" /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\lib\Win32" qtmaind.lib QtCored4.lib QtGuid4.lib QtOpenGLd4.lib opengl32.lib cudart.lib glu32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Conways Game of Life Test.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Sam\Conways Game of Life Test\Conways Game of Life Test.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Sam\Conways Game of Life Test\Conways Game of Life Test.lib" /MACHINE:X86 Debug\cellularautomata_gpgpu.cu.obj
+         Debug\cellularautomata_kernal.cu.obj
+         Debug\cellularautomata.obj
+         Debug\moc_gldrawer.obj
+         Debug\moc_widgetdisplay.obj
+         Debug\qrc_widgetdisplay.obj
+         Debug\gldrawer.obj
+         Debug\main.obj
+         Debug\widgetdisplay.obj
+         LINK : C:\Users\Sam\Conways Game of Life Test\\Conways Game of Life Test.exe not found or not built by the last incremental link; performing full link
+         Conways Game of Life Test.vcxproj -> C:\Users\Sam\Conways Game of Life Test\Conways Game of Life Test.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Sam\Conways Game of Life Test\\Conways Game of Life Test.exe;#1" /manifest "Debug\Conways Game of Life Test.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Debug\Conways Game of Life Test.unsuccessfulbuild".
+         Touching "Debug\Conways Game of Life Test.lastbuildstate".
+     1>Done Building Project "C:\Users\Sam\Conways Game of Life Test\Conways Game of Life Test\Conways Game of Life Test.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.13

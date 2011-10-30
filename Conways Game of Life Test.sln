@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Conways Game of Life Test", "Conways Game of Life Test\Conways Game of Life Test.vcxproj", "{073E90C6-6227-4851-86D0-B81C680CD991}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{073E90C6-6227-4851-86D0-B81C680CD991}.Debug|Win32.ActiveCfg = Debug|Win32
+		{073E90C6-6227-4851-86D0-B81C680CD991}.Debug|Win32.Build.0 = Debug|Win32
+		{073E90C6-6227-4851-86D0-B81C680CD991}.Release|Win32.ActiveCfg = Release|Win32
+		{073E90C6-6227-4851-86D0-B81C680CD991}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
