@@ -3,22 +3,19 @@
 
 #include <cstdlib>
 
-// declaration, forward
-extern "C" float CUDATimeStep(int* pFlatGrid, const int DIM);
 
 class CellularAutomata 
 {
 
 public:
 	CellularAutomata(int,int); //random data
-	CellularAutomata(int, int*);
+	CellularAutomata(int*, int);
 	~CellularAutomata();
-	const unsigned dim; //Should make const?
-	int *pFlatGrid;
-	float nextTimeStep();
 
-private:
-	int transitionFunction(int, int);
+	const unsigned DIM; //Should make const?
+	int *pFlatGrid;
+
+	virtual float nextTimeStep() = 0;
 };
 
 #endif // CELLULARAUTOMATA_H

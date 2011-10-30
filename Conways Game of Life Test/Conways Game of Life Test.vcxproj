@@ -78,6 +78,8 @@
       <FileType>CppCode</FileType>
     </CudaCompile>
     <CudaCompile Include="cellularautomata_kernal.cu" />
+    <ClCompile Include="cellularautomata_cpu.cpp" />
+    <ClCompile Include="cellularautomata_gpgpu.cpp" />
     <ClCompile Include="GeneratedFiles\Debug\moc_gldrawer.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -127,6 +129,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cellularautomata.h" />
+    <ClInclude Include="cellularautomata_cpu.h" />
+    <ClInclude Include="cellularautomata_gpgpu.h" />
     <ClInclude Include="cellularautomata_kernal.h" />
     <ClInclude Include="GeneratedFiles\ui_widgetdisplay.h" />
     <CustomBuild Include="gldrawer.h">

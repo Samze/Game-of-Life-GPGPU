@@ -62,6 +62,12 @@
     <ClCompile Include="GeneratedFiles\Release\moc_gldrawer.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="cellularautomata_cpu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cellularautomata_gpgpu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="widgetdisplay.h">
@@ -85,6 +91,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cellularautomata_kernal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cellularautomata_cpu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cellularautomata_gpgpu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

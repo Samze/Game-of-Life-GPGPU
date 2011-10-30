@@ -5,7 +5,8 @@
 #include "ui_widgetdisplay.h"
 #include "gldrawer.h"
 #include <QTimer>
-#include "cellularautomata.h"
+#include "cellularautomata_gpgpu.h"
+#include "cellularautomata_cpu.h"
 
 class WidgetDisplay : public QWidget
 {

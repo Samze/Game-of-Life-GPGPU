@@ -25,11 +25,11 @@ void GLDrawer::paintGL(){
 	glClear(GL_COLOR_BUFFER_BIT);
 	glColor3f(1,0,0);
 
-	float cellSpace = (float) width() / CA->dim;
+	float cellSpace = (float) width() / CA->DIM;
 	
-	for(int i = 0; i < CA->dim; ++i) {
-		for(int j = 0; j < CA->dim; ++j) {
-			if (CA->pFlatGrid[i * CA->dim + j] == 1) {
+	for(int i = 0; i < CA->DIM; ++i) {
+		for(int j = 0; j < CA->DIM; ++j) {
+			if (CA->pFlatGrid[i * CA->DIM + j] == 1) {
 				//draw!
 				//qDebug("%d + %d",x,y);
 				drawCell(i,j,cellSpace);
