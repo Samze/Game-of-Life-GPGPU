@@ -1,5 +1,5 @@
 #include "cellularautomata_cpu.h"
-
+#include "windows.h"
 
 CellularAutomata_CPU::CellularAutomata_CPU(int dim, int seed) : CellularAutomata(dim, seed)
 {
@@ -12,7 +12,15 @@ CellularAutomata_CPU::~CellularAutomata_CPU()
 
 float CellularAutomata_CPU::nextTimeStep() {
 
+	//vars for timiung 
+    LARGE_INTEGER liStart;
+    LARGE_INTEGER liEnd;
+    LARGE_INTEGER liPerfFreq;
 	float elapsedTime = 0.0f;
+	
+	//START TIMING
+	liStart.QuadPart = 0;
+    QueryPerformanceCounter( &liStart );
 
 	//loop through CA, non-parallel
 	for (int i = 0; i < DIM; ++i) {
@@ -24,14 +32,22 @@ float CellularAutomata_CPU::nextTimeStep() {
 		}
 	}
 
+	//END TIMING
+	liEnd.QuadPart = 0;
+    QueryPerformanceCounter( &liEnd );
+
 	//fix up states - normalize
 	for (int i = 0; i < DIM; ++i) {
 		for (int j = 0; j < DIM; ++j) {
 				pFlatGrid[i * DIM + j] = pFlatGrid[i * DIM + j] >> 1;
 		}
 	}
+	
+	//Calc difference, return in milliseconds
+	QueryPerformanceFrequency( &liPerfFreq );
+	double diff = liEnd.QuadPart - liStart.QuadPart;
 
-	return elapsedTime;
+	return (diff * 1000) / liPerfFreq.QuadPart;
 }
 
 int CellularAutomata_CPU::transitionFunction(int x, int y) {

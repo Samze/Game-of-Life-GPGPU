@@ -7,6 +7,7 @@
 #include <QTimer>
 #include "cellularautomata_gpgpu.h"
 #include "cellularautomata_cpu.h"
+#include <Qt>
 
 class WidgetDisplay : public QWidget
 {

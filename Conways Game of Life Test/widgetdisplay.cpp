@@ -1,5 +1,4 @@
 #include "widgetdisplay.h"
-#include <Qt>
 
 WidgetDisplay::WidgetDisplay(QWidget *parent, Qt::WFlags flags)
 	: QWidget(parent, flags)
@@ -14,7 +13,6 @@ WidgetDisplay::WidgetDisplay(QWidget *parent, Qt::WFlags flags)
 	timer = new QTimer(this);
 	connect(timer, SIGNAL(timeout()),this,SLOT(tick()));
 	timer->start(timerTick);
-
 
 	//Create random CA, lower range is more concentrate
 

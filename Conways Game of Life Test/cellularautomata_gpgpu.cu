@@ -25,6 +25,7 @@ extern "C" float CUDATimeStep(int* pFlatGrid, int DIM) {
 	cudaMalloc((void**) &dev_DIM, sizeof(int));
 
 	//Make our 2D grid of blocks & threads (DIM/No of threads)
+	//One pixel is one thread.
 	dim3 blocks (DIM/10, DIM/10);
 	dim3 threads(10,10);
 	
